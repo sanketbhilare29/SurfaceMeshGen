@@ -458,7 +458,7 @@ classdef triangle_node < handle
                         
             %if ~isempty(triangle.F(i1).V)
             if any(any((triangle.F(i1).V)))                
-                if incircle(triangle.F(i1),p)>0                  
+                if incircle(triangle.F(i1),p)>=0                  
                     [T1,T2,D1]=flipedge(triangle,p,D);
                
                     D1=Validedge(T1,p,D1);
